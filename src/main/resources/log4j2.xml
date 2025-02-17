@@ -14,7 +14,7 @@
         </logger>
 
         <!-- org.zerock 패키지 로그 설정 -->
-        <logger name="org.zerock" level="INFO" additivity="false">
+        <logger name="org.zerock" level="TRACE" additivity="false">
             <appender-ref ref="console"/>
         </logger>
 
