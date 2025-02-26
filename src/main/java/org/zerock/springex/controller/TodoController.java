@@ -52,6 +52,17 @@ public class TodoController {
 
         return "redirect:/todo/list";
     }
+
+    @GetMapping("/read")
+    public void read(@RequestParam("tno") Long tno, Model model) {
+
+        TodoDTO todoDTO = todoService.getOne(tno);
+        log.info(todoDTO);
+
+        model.addAttribute("dto", todoDTO);
+    }
+
+
 }
 
 
