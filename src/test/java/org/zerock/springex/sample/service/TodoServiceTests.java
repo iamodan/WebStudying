@@ -27,9 +27,9 @@ public class TodoServiceTests {
     public void testRegister() {
 
         TodoDTO todoDTO = TodoDTO.builder()
-                .title("TEst...")
+                .title("title0301_4")
                 .dueDate(LocalDate.now())
-                .writer("user1")
+                .writer("user0301_4")
                 .build();
 
         todoService.register(todoDTO);
